@@ -1,4 +1,3 @@
-SONG CPP
 
 #include "Song.hpp"
 
