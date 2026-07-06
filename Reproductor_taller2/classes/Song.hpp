@@ -1,4 +1,3 @@
-SONG HPP
 
 #ifndef SONG_HPP
 #define SONG_HPP
