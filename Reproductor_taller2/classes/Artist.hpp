@@ -1,8 +1,20 @@
-//
-// Created by aagui on 05-07-2026.
-//
+#ifndef ARTIST_HPP
+#define ARTIST_HPP
 
-#ifndef BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_ARTIST_HPP
-#define BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_ARTIST_HPP
+#include <string>
 
-#endif //BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_ARTIST_HPP
+class Artist {
+private:
+    std::string nombreArtista;
+    int totalReproducciones;
+
+public:
+    Artist();
+    Artist(std::string nombre, int repros);
+    
+    std::string getNombre() const;
+    int getTotalReproducciones() const;
+    void acumularReproducciones(int cantidad);
+};
+
+#endif
