@@ -1,8 +1,12 @@
-//
-// Created by aagui on 05-07-2026.
-//
+#ifndef MENUS_HPP
+#define MENUS_HPP
 
-#ifndef BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_MENUS_HPP
-#define BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_MENUS_HPP
+#include "Player.hpp"
+#include "../data_structures/Trie.hpp"
 
-#endif //BENJAMINROJAS_BRANDONNAVEA_IGNACIOCATALDO_TALLER2_MENUS_HPP
+void refrescarPantalla();
+void renderizarMenuPrincipal(Player& reproductor, Trie& buscador);
+void ventanaBusqueda(Player& reproductor, Trie& buscador);
+void ventanaRankings(Player& reproductor);
+
+#endif
