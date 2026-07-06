@@ -38,12 +38,10 @@ Todo el código sigue estructurado con Templates (`<T>`) para evitar redundancia
 ---
 
 ## :gear: Compilación y Ejecución
-Para compilar y ejecutar este proyecto, necesitas tener instalado un compilador de C++ compatible con el estándar C++14 o superior (como GCC o MinGW). 
+Para compilar y ejecutar este proyecto de forma limpia por consola (CMD), necesitas tener instalado un compilador de C++ (como MinGW/GCC). Como el proyecto está dividido en varios módulos y carpetas, tienes dos opciones para hacerlo funcionar desde tu terminal ubicándote en la raíz del proyecto:
 
-Debido a que el código está modularizado en distintas carpetas, la forma recomendada de compilarlo es desde la terminal, ubicándote en la carpeta raíz del proyecto.
-
-**1. Compilación mediante terminal:**
-Ejecuta el siguiente comando para enlazar todos los archivos fuente de los distintos módulos:
+### Opción 1: Compilación manual (Comando g++)
+Abre tu consola (CMD o terminal) y lanza este comando para enlazar todos los archivos `.cpp` de las distintas carpetas y generar el ejecutable:
 
 ```bash
 g++ main.cpp core/*.cpp classes/*.cpp data_structures/*.cpp -o CPlayer
